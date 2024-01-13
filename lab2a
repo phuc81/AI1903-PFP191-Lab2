@@ -1,0 +1,53 @@
+# Recursive function to calculate the sum of numbers from 1 to 10
+def calculate_sum(n):
+    # Base case
+    if n == 0:
+        return 0
+    else:
+        return n + calculate_sum(n - 1)
+    
+result = calculate_sum(10)
+print(result)       
+
+# Return multiple values from a function
+def calculation_sum(a, b):
+    return a + b
+result = calculation_sum(40, 10)
+print(result)
+
+def calculation_sum(a, b):
+    return a - b
+result = calculation_sum(40, 10)
+print(result)
+
+# Create a function with default argument
+name = "Ben"
+salary = 12000
+
+print("Name:", name, "salary:", salary)
+ 
+name = "Jessa"
+salary = 9000
+
+print("Name:", name, "salary:", salary)
+
+# Find the largest item from a given list
+x = [4, 6, 8, 24, 12, 2]
+max_item = max(x)
+print(max_item)
+
+# check palindrome number
+def is_palindrome(num):
+    num = str(num)
+    return num == num[::-1]
+
+# Create a function with variable length of arguments
+def func1(*args):
+    for arg in args:
+        print(arg)
+
+# Call function with 3 arguments
+func1(20, 40, 60)
+
+# Call function with 2 arguments
+func1(80, 100)
